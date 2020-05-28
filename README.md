@@ -63,10 +63,13 @@ Below are the four models I used and their Mean Absolute Error Scores. (Used a c
  * Ridge - 22.08
  * Random Forest - 22.00 
 
-#### Restults
+#### Results
 The Lasso model performed the best with a mean absolute error of ~20 meaning that its predictions were about $20,000 off from othe actual salaries. I don't think these results are that awful given that glassdoor provides a pretty wide salary range.
 
 #### Further Work
 A lot more data is required for this model to actual accurate.
 Around ~1,500 jobs is not enough. 
 Would like to create an web facing api for people to enter their personalized job criteria and the interface would spit out a predicted salary based off a large set of data (~1,000,000).
+
+#### Slides
+https://docs.google.com/presentation/d/1XiKExI6fY0AYU-il6l1-6o2bkgk8NSuOgG5JwhFysVg/edit?usp=sharing
