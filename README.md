@@ -9,3 +9,18 @@ Help those landing a Data Science job negotiate their salary based off personali
 
 ## Process:
 #### Acquiring Data
+Scraped ~1,500 jobs from Glassdoor via selenium
+(Received help from this blog post https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905)
+Scraped the following information from each job posting
+* Job Title
+* Salary Estimate
+* Rating
+* Company
+* Location
+* Headquarters Location
+* Sector
+* Industry
+* Company Size (Employees)
+* Revenue
+* Type of Ownership
+* Year company founded
