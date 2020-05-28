@@ -5,3 +5,7 @@ Create a prediction model that will predict Data Analyst, Data Engineer, Machine
 
 ## Social Case: 
 Help those landing a Data Science job negotiate their salary based off personalized criteria.
+
+
+## Process:
+#### Acquiring Data
