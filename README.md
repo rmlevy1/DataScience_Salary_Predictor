@@ -53,18 +53,25 @@ A few highlights below.
 <img src="Project%20Images/Seniority.png" width="300">
 
 #### Modeling
-One hot encoded all the categorical variables, creating 140 columns. 
-Performed a train-test split of 20%.
+One hot encoded all the categorical variables, creating 140 columns. \
+Performed a train-test split of 80-20.\
 
-Baseline Model was Multiple Linear Regressiong and the metric I used was Mean Absolute Error for its interpretability.\
-Below are the four models I used and their Mean Absolute Error Scores. (Used a cross validation score of 20)
- * Multiple Linear Regression - 22.16
- * Lasso - 20.78
- * Ridge - 22.08
- * Random Forest - 22.00 
+I tried four different models and evaluated them based on Mean Absolute Error due to its interpretability.
+ * Multiple Linear Regression - Due to its simplicity and interpretability of feature value and significance. 
+ * Ridge & Lasso - Due to the sparse data in the many categorical features, I thought that a normalized regression would be effective.
+ * Random Forest Regressor - Because of the sparsity associated with the data.
+ 
+ Using GridSearchCV I found that the optimal alpha for Ridge was 27 and for Lasso 0.3.
 
-#### Results
-The Lasso model performed the best with a mean absolute error of ~20 meaning that its predictions were about $20,000 off from othe actual salaries. I don't think these results are that awful given that glassdoor provides a pretty wide salary range.
+#### Model Results (Mean Absolute Error)
+* Baseline Model - 25.71
+* Multiple Linear Regression - 22.16
+* Ridge - 20.88
+* Lasso - 20.37
+* Random Forest Regressor - 21.05
+
+
+The Lasso model performed the best with a mean absolute error of 20.37, meaning that its predictions were off by an average of $20,370.00 from othe actual salaries.
 
 #### Slides
 https://docs.google.com/presentation/d/1XiKExI6fY0AYU-il6l1-6o2bkgk8NSuOgG5JwhFysVg/edit?usp=sharing
