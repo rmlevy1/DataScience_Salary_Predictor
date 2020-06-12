@@ -54,7 +54,7 @@ A few highlights below.
 
 #### Modeling
 One hot encoded all the categorical variables, creating 140 columns. \
-Performed a train-test split of 80-20. \
+Performed a train-test split of 80-20. 
 
 I tried four different models and evaluated them based on Mean Absolute Error due to its interpretability.
  * Multiple Linear Regression - Due to its simplicity and interpretability of feature value and significance. 
